@@ -4,12 +4,9 @@ layout: default
 
 ## Jeong Daeheyon
 
-> empcik@pusan.ac.kr
-> dhjung7894@gmail.com
-> This is a blockquote following a header.
-> When something is important enough, you do it even if the odds are not in your favor.
+<p>Hi! I'm doing backend development and data analysis. If you need anything or want to inquire, please feel free to contact me.</p>
 
-### Header 3
+### Education
 
 ```js
 // Javascript code with syntax highlighting.
@@ -19,12 +16,7 @@ var fun = function lang(l) {
 }
 ```
 
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
+[Link to git repository](.https://github.com/Jeong-Daniel?tab=repositories).
 
 #### Header 4
 
