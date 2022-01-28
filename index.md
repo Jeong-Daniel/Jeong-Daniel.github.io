@@ -7,16 +7,13 @@ layout: default
 <p>Hi! I'm doing backend development and data analysis. If you need anything or want to inquire, please feel free to contact me.</p>
 
 ### Education
+Undergraduate student at Pusan National University
+First major : Aerospace Engineering
+Second major : Big data engineering
+credit 3.61/4.5
 
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-[Link to git repository](.https://github.com/Jeong-Daniel?tab=repositories).
+### Certification
+[Link to Certification](https://github.com/Jeong-Daniel/certification)
 
 #### Header 4
 
@@ -76,29 +73,3 @@ var fun = function lang(l) {
 ### Small image
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
-
-
-### Definition lists can be used with HTML syntax.
-
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
-
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
