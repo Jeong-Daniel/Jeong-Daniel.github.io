@@ -7,12 +7,12 @@ layout: default
 <p>Hi! I'm doing backend development and data analysis. If you need anything or want to inquire, please feel free to contact me.</p>
 
 ### Education
-Undergraduate student at Pusan National University
-First major : Aerospace Engineering
-Second major : Big data engineering
-credit 3.61/4.5
+Undergraduate student at Pusan National University  
+First major : Aerospace Engineering  
+Second major : Big data engineering  
+credit 3.61/4.5  
 
-### Certification
+### Certification & Course
 [Link to Certification](https://github.com/Jeong-Daniel/certification)
 
 #### Header 4
