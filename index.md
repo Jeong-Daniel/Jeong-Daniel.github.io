@@ -16,14 +16,12 @@ credit 3.61/4.5
 *   Big data analysis Engineering National certificate  
 *   SQLD(SQL Developer)  
 *   Purdue-Pusan National Summer Program 2021 July-Agust 2021  
-
 <strong>[Link to Certification & Course](https://github.com/Jeong-Daniel/certification)</strong>
 
 ## Repositories
-Graduation thesis  
-*   Improving the ArucoMarker position and posture estimation algorithm through image post-processing
+*   (Graduation thesis) Improving the ArucoMarker position and posture estimation algorithm through image post-processing
 *   UAV-Ground-Detection-and-Tracking-Systems  
-[Link to Repositories](https://github.com/Jeong-Daniel?tab=repositories)
+<strong>[Link to Repositories](https://github.com/Jeong-Daniel?tab=repositories)</strong>
 
 ## Available technology
 * Python - Pandas, Numpy
