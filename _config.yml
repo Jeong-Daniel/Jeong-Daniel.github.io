@@ -31,6 +31,10 @@ github_username:  Jeong-Daniel
 
 # Build settings
 theme: minima
+google_analytics: [G-2GJV30P5ZP]
+color-scheme: auto/light/dark
+logo: /assets/img/Person.jpg
+favicon: true
 plugins:
   - jekyll-feed
 
