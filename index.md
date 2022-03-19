@@ -8,7 +8,7 @@ Hi! I'm doing backend development and data analysis. If you need anything or wan
 ## Education
 Undergraduate student at Pusan National University  
 First major : Aerospace Engineering  
-Second major : Big data engineering  
+Second major : Big Data Engineering  
 credit 3.61/4.5  
 
 ## Certification & Course
@@ -25,7 +25,8 @@ credit 3.61/4.5
 
 ## Available technology
 * Python - Pandas, Numpy
-* Computer Vision - OpenCV
+* Computer Vision - OpenCV(with python, Raspberry Pi)
+* Visualization : Matplotlib, Seaborn
+* Web Framework : Django
 * Data analysis with using scikit-learn, tensorflow
 * SQL, OracleDB, MariaDB
-* Raspberry Pi
