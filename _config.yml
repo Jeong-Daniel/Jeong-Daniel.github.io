@@ -14,7 +14,7 @@
 # https://learnxinyminutes.com/docs/yaml/
 #
 # 사이트 설정
-# These are used to personalize your new site. If you look in the HTML files,
+# 아래는 사이트를 커스터마이즈하기 위해 필요한 것들입니다. HTML파일을 보면
 # {{ site.mail}, {{ site.email }} 등을 통해 액세스되는 것을 볼 수 있습니다.
 # 원하는 모든 사용자 지정 변수를 만들 수 있으며 이러한 변수에 액세스할 수 있습니다.
 # {{ site.myvariable }을(를) 통해 템플릿에 있습니다.
@@ -31,20 +31,20 @@ github_username:  Jeong-Daniel
 
 # Build settings
 theme: minima
-google_analytics: [G-2GJV30P5ZP]
-color-scheme: auto/light/dark
+google_analytics:
+color-scheme: auto/dark/light
 logo: /assets/img/Person.jpg
 favicon: true
 plugins:
   - jekyll-feed
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
+# 처리에서 제외합니다.
+# 다음 항목은 기본적으로 처리되지 않습니다.
+# 아래에 나열된 항목들 `exclude:` 키가 자동으로 추가됩니다. 
 # the internal "default list".
 #
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
+# 제외된 하목은 디렉터리를 명시적으로 나열하거나
+# `include:`에 속한 항목들입니다.
 #
 # exclude:
 #   - .sass-cache/
