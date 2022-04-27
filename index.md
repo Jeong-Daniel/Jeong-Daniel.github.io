@@ -29,7 +29,7 @@ Credit 3.61/4.5
 * Computer Vision(with python, Raspberry Pi)<br/>
 <img src="https://img.shields.io/badge/Opencv-072743?style=for-the-badge&logo=opencv&logoColor=white">
 * Machin Learning / Deep Learning(CNN)<br/>
-<img src="https://img.shields.io/badge/Scikit_Learn-969696?style=for-the-badge&logo=Scikit-learn&logoColor=white">
+<img src="https://img.shields.io/badge/Scikit_Learn-FF8C00?style=for-the-badge&logo=Scikit-learn&logoColor=white">
 <img src="https://img.shields.io/badge/Pytorch-e06666?style=for-the-badge&logo=Pytorch&logoColor=white">
 * DataBase<br/>
 <img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"><img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"><img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white">
