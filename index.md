@@ -3,7 +3,7 @@ layout: default
 ---
 
 # Jeong Daeheyon
-Hi! I'm doing backend development and data analysis. If you need anything or want to inquire, please feel free to contact me.  
+Hi! My name is Jeong_Daehyeon or English name is Daniel Jeong. I'm doing backend development and data analysis. If you need anything or want to inquire, please feel free to contact me.  
 
 ## Education
 Undergraduate student at Pusan National University  
@@ -15,7 +15,7 @@ Credit 3.61/4.5
 *   ADsP(Advanced Data Analytics Semi-Professional)  
 *   Big data analysis Engineering National certificate  
 *   SQLD(SQL Developer)  
-*   Purdue-Pusan National Summer Program 2021 July-Agust 2021  
+*   Purdue-Pusan National Summer Program 2021 July-Agust 2021<br>
 <strong>[Link to Certification & Course](https://github.com/Jeong-Daniel/certification)</strong>
 
 ## Repositories
@@ -28,7 +28,7 @@ Credit 3.61/4.5
 <img src="https://img.shields.io/badge/Django-27423A?style=for-the-badge&logo=django&logoColor=white"><img src="https://img.shields.io/badge/Spring-9fdf82?style=for-the-badge&logo=spring&logoColor=white"><br/>
 * Computer Vision(with python, Raspberry Pi)<br/>
 <img src="https://img.shields.io/badge/Opencv-072743?style=for-the-badge&logo=opencv&logoColor=white">
-* Machin Learning / Deep Learning(CNN, image analysis)<br/>
+* Machin Learning / Deep Learning(CNN)<br/>
 <img src="https://img.shields.io/badge/Scikit_Learn-969696?style=for-the-badge&logo=Scikit-learn&logoColor=white">
 <img src="https://img.shields.io/badge/Pytorch-e06666?style=for-the-badge&logo=Pytorch&logoColor=white">
 * DataBase<br/>

@@ -20,11 +20,11 @@
 # {{ site.myvariable }을(를) 통해 템플릿에 있습니다.
 
 title: Data scientist's room
-email: empcik@pusan.ac.kr
+email: !(empcik@pusan.ac.kr)(mailto:empcik@pusan.ac.kr)
 description: # 이것의 의미는 "baseurl:"까지 줄바꿈을 무시함을 의미한다.
   [Welcome to the Data Scientist's Room. I am posting blogs to deal with
 technical theories and field applications.]
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "https://jeong-daniel.github.io/"
 twitter_username: Jeong_Daniel_
 github_username:  Jeong-Daniel
