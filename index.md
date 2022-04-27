@@ -20,7 +20,7 @@ Credit 3.61/4.5
 
 ## Repositories
 *   [<u>Improving the ArucoMarker position and posture estimation algorithm through image post-processing(Graduation thesis)</u>](https://github.com/Jeong-Daniel/aruco_marker_tracking)
-*   [<u>UAV-Ground-Detection-and-Tracking-Systems</u>](https://github.com/Jeong-Daniel?tab=repositories)
+*   [<u>UAV-Ground-Detection-and-Tracking-Systems</u>](https://github.com/Jeong-Daniel/project17_UAV)
 
 ## Available Technology Stack
 * Programming Language & Web Framework<br/>
