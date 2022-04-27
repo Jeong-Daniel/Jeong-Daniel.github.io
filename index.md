@@ -19,13 +19,17 @@ Credit 3.61/4.5
 <strong>[Link to Certification & Course](https://github.com/Jeong-Daniel/certification)</strong>
 
 ## Repositories
-*   (Graduation thesis) Improving the ArucoMarker position and posture estimation algorithm through image post-processing
-*   UAV-Ground-Detection-and-Tracking-Systems  
-<strong>[Link to Repositories](https://github.com/Jeong-Daniel?tab=repositories)</strong>
+*   [<u>Improving the ArucoMarker position and posture estimation algorithm through image post-processing(Graduation thesis)</u>](https://github.com/Jeong-Daniel/aruco_marker_tracking)
+*   [<u>UAV-Ground-Detection-and-Tracking-Systems</u>](https://github.com/Jeong-Daniel?tab=repositories)
 
 ## Available Technology Stack
-* Programming Language: Python, Java
-* Web Framework: Django, Spring
-* Computer Vision: OpenCV(with python, Raspberry Pi)
-* Scikit-learn, Pytorch(CNN, image analysis)
-* DataBase: SQL, OracleDB, MariaDB
+* Programming Language & Web Framework<br/>
+<img src="https://img.shields.io/badge/Python-0769AD?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
+<img src="https://img.shields.io/badge/Django-27423A?style=for-the-badge&logo=django&logoColor=white"><img src="https://img.shields.io/badge/Spring-9fdf82?style=for-the-badge&logo=spring&logoColor=white"><br/>
+* Computer Vision(with python, Raspberry Pi)<br/>
+<img src="https://img.shields.io/badge/Opencv-072743?style=for-the-badge&logo=opencv&logoColor=white">
+* Machin Learning / Deep Learning(CNN, image analysis)<br/>
+<img src="https://img.shields.io/badge/Scikit_Learn-969696?style=for-the-badge&logo=Scikit-learn&logoColor=white">
+<img src="https://img.shields.io/badge/Pytorch-e06666?style=for-the-badge&logo=Pytorch&logoColor=white">
+* DataBase<br/>
+<img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"><img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white"><img src="https://img.shields.io/badge/mariaDB-003545?style=for-the-badge&logo=mariaDB&logoColor=white">
