@@ -9,7 +9,7 @@ Hi! I'm doing backend development and data analysis. If you need anything or wan
 Undergraduate student at Pusan National University  
 First major : Aerospace Engineering  
 Second major : Big Data Engineering  
-credit 3.61/4.5  
+Credit 3.61/4.5  
 
 ## Certification & Course
 *   ADsP(Advanced Data Analytics Semi-Professional)  
@@ -23,10 +23,9 @@ credit 3.61/4.5
 *   UAV-Ground-Detection-and-Tracking-Systems  
 <strong>[Link to Repositories](https://github.com/Jeong-Daniel?tab=repositories)</strong>
 
-## Available technology
-* Python - Pandas, Numpy
-* Computer Vision - OpenCV(with python, Raspberry Pi)
-* Visualization : Matplotlib, Seaborn
-* Web Framework : Django
-* Data analysis with using scikit-learn, tensorflow
-* SQL, OracleDB, MariaDB
+## Available Technology Stack
+* Programming Language: Python, Java
+* Web Framework: Django, Spring
+* Computer Vision: OpenCV(with python, Raspberry Pi)
+* Scikit-learn, Pytorch(CNN, image analysis)
+* DataBase: SQL, OracleDB, MariaDB
