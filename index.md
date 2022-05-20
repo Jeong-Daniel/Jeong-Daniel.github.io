@@ -17,7 +17,7 @@ Second major : [<u>Big Data Engineering</u>](https://github.com/Jeong-Daniel/Big
 *   Purdue-Pusan National Summer Program 2021 July-Agust 2021<br>
 <strong>[Link to Certification & Course](https://github.com/Jeong-Daniel/certification)</strong>
 
-## Repositories
+## Projects
 *   [<u>Improving the ArucoMarker position and posture estimation algorithm through image post-processing(Graduation thesis)</u>](https://github.com/Jeong-Daniel/aruco_marker_tracking)
 *   [<u>UAV-Ground-Detection-and-Tracking-Systems</u>](https://github.com/Jeong-Daniel/project17_UAV)
 
