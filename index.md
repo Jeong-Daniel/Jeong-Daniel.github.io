@@ -7,12 +7,12 @@ Hi! My name is Jeong_Daehyeon or English name is Daniel Jeong. I'm doing backend
 
 ## Education
 Undergraduate student at Pusan National University  
-First major : Aerospace Engineering  
-Second major : Big Data Engineering  
+First major : [Aerospace Engineering](https://github.com/Jeong-Daniel/aerospace_engineering)  
+Second major : [Big Data Engineering](https://github.com/Jeong-Daniel/Bigdata_engineering)  
 
 ## Certification & Course
 *   ADsP(Advanced Data Analytics Semi-Professional)  
-*   Big data analysis Engineering National certificate  
+*   Big Data analysis Engineering National certificate  
 *   SQLD(SQL Developer)  
 *   Purdue-Pusan National Summer Program 2021 July-Agust 2021<br>
 <strong>[Link to Certification & Course](https://github.com/Jeong-Daniel/certification)</strong>
