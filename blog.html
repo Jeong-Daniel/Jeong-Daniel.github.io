@@ -11,6 +11,7 @@ layout: default
       </a>
         <!-- <small class="post-date">{{ post.date | date_to_string }}</small> -->
         <small class="post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</small>
+        tags:  
         {% for post in site.posts  %}
         <a class="post-title" href="{{ site.baseurl }}{{ tags.url }}"></a>
           {{post.tags}}
