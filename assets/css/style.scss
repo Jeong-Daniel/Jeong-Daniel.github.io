@@ -76,6 +76,9 @@
   padding-bottom: 10px;
   overflow-x: hidden;
   overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .navbar__menu {
