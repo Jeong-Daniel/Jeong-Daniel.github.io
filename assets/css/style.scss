@@ -74,6 +74,8 @@
   background-color: var(--background-color);
   padding: 0px 12px;
   padding-bottom: 10px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .navbar__menu {
@@ -81,10 +83,12 @@
   display: flex;
   margin: 0;
   padding-left: 0;
+  
 }
 
 .navbar__menu li {
   padding: 8px 30px;
   color: #828282;
   font-size: large;
+  
 }

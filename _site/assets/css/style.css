@@ -238,7 +238,7 @@ footer { display: none; }
 
 @media screen and (max-width: 700px) { .box { width: 70%; } .popup { width: 70%; } }
 
-.navbar { display: flex; justify-content: space-between; align-items: center; background-color: var(--background-color); padding: 0px 12px; padding-bottom: 10px; }
+.navbar { display: flex; justify-content: space-between; align-items: center; background-color: var(--background-color); padding: 0px 12px; padding-bottom: 10px; overflow-x: hidden; overflow-y: scroll; }
 
 .navbar__menu { list-style: none; display: flex; margin: 0; padding-left: 0; }
 
