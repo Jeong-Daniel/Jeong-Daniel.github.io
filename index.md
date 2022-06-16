@@ -2,8 +2,8 @@
 layout: default
 ---
 
-# Jeong Daeheyon
-Hi! My name is Jeong_Daehyeon or English name is Daniel Jeong. I'm doing backend development and data analysis. If you need anything or want to inquire, please feel free to contact me.  
+## Jeong Daeheyon
+Hi! My name is Jeong Daehyeon or English name is Daniel Jeong. I'm doing backend development and data analysis. If you need anything or want to inquire, please feel free to contact me.  
 
 ## Education
 Undergraduate student at Pusan National University  
@@ -21,7 +21,7 @@ Second major : [<u>Big Data Engineering</u>](https://github.com/Jeong-Daniel/Big
 *   [<u>Improving the ArucoMarker position and posture estimation algorithm through image post-processing(Graduation thesis)</u>](https://github.com/Jeong-Daniel/aruco_marker_tracking)
 *   [<u>UAV-Ground-Detection-and-Tracking-Systems</u>](https://github.com/Jeong-Daniel/project17_UAV)
 
-## Available Technology Stack
+## Technology Stack
 * Programming Language & Web Framework<br/>
 <img src="https://img.shields.io/badge/Python-0769AD?style=for-the-badge&logo=python&logoColor=white"><img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
 <img src="https://img.shields.io/badge/Django-27423A?style=for-the-badge&logo=django&logoColor=white"><img src="https://img.shields.io/badge/Spring-9fdf82?style=for-the-badge&logo=spring&logoColor=white"><br/>

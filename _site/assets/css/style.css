@@ -210,11 +210,11 @@ footer { display: none; }
 
 .sidebar-footer { flex-basis: content; }
 
-@media print, screen and (max-width: 960px) { .sidebar { padding: initial; display: initial; height: initial; overflow: initial; } footer { display: initial; } .sidebar-footer { display: none; } div.wrapper { width: auto; margin: 0; } .sidebar, section, footer { float: none; position: static; width: auto; } header { padding-right: 320px; } section { border: 1px solid var(--clr-splitter-blockquote-and-section); border-width: 1px 0; padding: 20px 0; margin: 0 0 20px; } header a small { display: inline; } header ul { position: absolute; right: 50px; top: 52px; } .link-wrapper { display: none !important; } .img-circle { display: none !important; } }
+@media print, screen and (max-width: 960px) { .sidebar { padding: initial; display: initial; height: initial; overflow: initial; } footer { display: initial; } .sidebar-footer { display: none; } div.wrapper { width: auto; margin: 0; } .sidebar, section, footer { float: none; position: static; width: auto; } header { padding-right: 320px; } section { border: 1px solid var(--clr-splitter-blockquote-and-section); border-width: 1px 0; padding: 5px 0; margin: 0 0 20px; } header a small { display: inline; } header ul { position: absolute; right: 50px; top: 52px; } .link-wrapper { display: none !important; } .img-circle { display: none !important; } }
 
 @media print, screen and (max-width: 720px) { body { word-wrap: break-word; } header { padding: 0; } header ul, header p.view { position: static; } pre, code { word-wrap: normal; } }
 
-.link-wrapper-mobile { margin-bottom: 20px; }
+.link-wrapper-mobile { margin-bottom: 0px; }
 
 @media print, screen and (min-width: 961px) { .link-wrapper-mobile { display: none !important; } }
 
@@ -237,5 +237,11 @@ footer { display: none; }
 .popup .content { padding-right: 20px; max-height: 30%; overflow: auto; font: 15px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 @media screen and (max-width: 700px) { .box { width: 70%; } .popup { width: 70%; } }
+
+.navbar { display: flex; justify-content: space-between; align-items: center; background-color: var(--background-color); padding: 0px 12px; padding-bottom: 5px; }
+
+.navbar__menu { list-style: none; display: flex; margin: 0; padding-left: 0; }
+
+.navbar__menu li { padding: 8px 30px; color: #288CD2; font-size: large; }
 
 /*# sourceMappingURL=style.css.map */
