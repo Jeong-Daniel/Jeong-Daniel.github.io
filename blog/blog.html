@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="tags-expo">
+  <div class="tags-expo-section">
+    {% for post in site.posts  %}
+      <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
+        <h2>{{ post.title }}</h2>
+        {{ post.excerpt }}
+      </a>
+        <!-- <small class="post-date">{{ post.date | date_to_string }}</small> -->
+        <small class="post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</small>
+        {% for post in site.posts  %}
+        <a class="post-title" href="{{ site.baseurl }}{{ tags.url }}"></a>
+          {{post.tags}}
+        </a>
+        {% endfor %}
+    {% endfor %}
+  </div>
+</div>
