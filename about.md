@@ -3,7 +3,9 @@ layout: default
 ---
 
 ## Jeong Daeheyon
-Hi! My name is Jeong Daehyeon or English name is Daniel Jeong. I'm doing backend development and data analysis. If you need anything or want to inquire, please feel free to contact me.  
+Hi! My name is Jeong Daehyeon or English name is Daniel Jeong. I'm doing backend development and data analysis. If you need anything or want to inquire, please feel free to contact me.
+
+### <strong><a href="https://www.notion.so/Jeong_Daniel-CV-a538e8ba44c748cc97b90ba569338b03"><i class="fa-solid fa-file-user"></i>  Please refer to my C.V.</a></strong>
 
 ## Education
 Undergraduate student at Pusan National University  
