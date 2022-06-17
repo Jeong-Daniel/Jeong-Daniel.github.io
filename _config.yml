@@ -37,6 +37,18 @@ logo: /assets/img/Person.jpg
 favicon: true
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+permalink: /:year/:month/
+pagination:
+  enabled: true
+  per_page: 6
+  sort_reverse: true
+  sort_field: 'date'
+  title: ':title'
+  trail:
+    before: 2
+    after: 2
 
 # 처리에서 제외합니다.
 # 다음 항목은 기본적으로 처리되지 않습니다.
