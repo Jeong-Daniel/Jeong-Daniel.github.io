@@ -39,18 +39,18 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-paginate: 5
-paginate_path: "/blog/page:num/"
-permalink: /:year/:month/
-pagination:
-  enabled: true
-  per_page: 6
-  sort_reverse: true
-  sort_field: 'date'
-  title: ':title'
-  trail:
-    before: 3
-    after: 3
+#paginate: 5
+#paginate_path: "/blog/page:num/"
+#permalink: /:year/:month/
+#pagination:
+#  enabled: true
+#  per_page: 6
+#  sort_reverse: true
+#  sort_field: 'date'
+ # title: ':title'
+ # trail:
+ #   before: 3
+ #   after: 3
 
 # 처리에서 제외합니다.
 # 다음 항목은 기본적으로 처리되지 않습니다.
