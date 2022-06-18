@@ -19,10 +19,10 @@
 # 원하는 모든 사용자 지정 변수를 만들 수 있으며 이러한 변수에 액세스할 수 있습니다.
 # {{ site.myvariable }을(를) 통해 템플릿에 있습니다.
 
-title: Data scientist's room
+title: Backend Developer's Room
 email: empcik@pusan.ac.kr
 description: # 이것의 의미는 "baseurl:"까지 줄바꿈을 무시함을 의미한다.
-  [Welcome to the Data Scientist's Room. I am posting blogs to deal with
+  [Welcome to the Data Backend Developer's Room. I am posting blogs to deal with
 technical theories and field applications.]
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://jeong-daniel.github.io/"
@@ -32,7 +32,7 @@ github_username:  Jeong-Daniel
 # Build settings
 theme: minima
 google_analytics:
-color-scheme: auto/dark/light
+color-scheme: auto
 logo: /assets/img/Person.jpg
 favicon: true
 plugins:
