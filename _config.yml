@@ -24,7 +24,7 @@ email: empcik@pusan.ac.kr
 description: # 이것의 의미는 "baseurl:"까지 줄바꿈을 무시함을 의미한다.
   [Welcome to the Data Backend Developer's Room. I am posting blogs to deal with
 technical theories and field applications.]
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://jeong-daniel.github.io/"
 twitter_username: Jeong_Daniel_
 github_username:  Jeong-Daniel
@@ -39,7 +39,6 @@ plugins:
   - jekyll-feed
   - jekyll-paginate
 
-#paginate: 5
 #paginate_path: "/blog/page:num/"
 #permalink: /:year/:month/
 #pagination:
@@ -59,7 +58,6 @@ plugins:
 #
 # 제외된 하목은 디렉터리를 명시적으로 나열하거나
 # `include:`에 속한 항목들입니다.
-#
 # exclude:
 #   - .sass-cache/
 #   - .jekyll-cache/

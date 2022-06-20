@@ -1,32 +1,25 @@
 ---
 layout: default
-pagination:
-  enabled: true
+pagination: true
 ---
 {% for post in site.posts %}
       <a class="post-title" href="{{ site.baseurl }}{{ post.url }}">
-        <h2>{{ post.title }}</h2>
+        <h2>{{ post.title }}</h2></a>
         {{ post.excerpt }}
-      </a>
-        <!-- <small class="post-date">{{ post.date | date_to_string }}</small> -->
         <small class="post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</small>
-        tag:  
-        {% for post in site.posts  %}
-        <a class="post-title" href="{{ site.baseurl }}{{ tags.url }}"></a>
-          {{post.tags}}
-        </a>
-        {% endfor %}
+        <a class="post-title" href="{{ site.baseurl }}{{ post.categories.url }}">{{ post.categories }}</a>  
+        <br></hr><br>
 {% endfor %}
+<p class="rss-subscribe">subscribe <a href="/feed.xml">via RSS</a></p>
 
-    <!-- Pagination links -->
-    {% if paginator.total_pages > 1 %}
-    <div class="pagination">
-      {% if paginator.previous_page %}
-        <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
-      {% else %}
-        <span>&laquo; Prev</span>
-      {% endif %}
-    
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+  <div class="pagination">
+    {% if paginator.previous_page %}
+      <a href="{{ paginator.previous_page_path | relative_url }}">&laquo; Prev</a>
+    {% else %}
+      <span>&laquo; Prev</span>
+    {% endif %}
       {% for page in (1..paginator.total_pages) %}
         {% if page == paginator.page %}
           <em>{{ page }}</em>
@@ -42,6 +35,6 @@ pagination:
       {% else %}
         <span>Next &raquo;</span>
       {% endif %}
-    </div>
-    {% endif %}
+
   </div>
+{% endif %}

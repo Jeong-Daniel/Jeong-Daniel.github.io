@@ -21,7 +21,7 @@ Second major : [<u>Big Data Engineering</u>](https://github.com/Jeong-Daniel/Big
 
 ## Projects
 *   [<u>Improving the ArucoMarker position and posture estimation algorithm through image post-processing(Graduation thesis)</u>](https://github.com/Jeong-Daniel/aruco_marker_tracking)
-*   [<u>UAV-Ground-Detection-and-Tracking-Systems</u>](https://github.com/Jeong-Daniel/project17_UAV)
+*   [<u>UAV Ground Detection and Tracking Systems</u>](https://github.com/Jeong-Daniel/project17_UAV)
 
 ## Technology Stack
 * Programming Language & Web Framework<br/>
