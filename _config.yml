@@ -22,7 +22,7 @@
 title: Backend Developer's Room
 email: empcik@pusan.ac.kr
 description: # 이것의 의미는 "baseurl:"까지 줄바꿈을 무시함을 의미한다.
-  [Welcome to the Data Backend Developer's Room. I am posting blogs to deal with
+  [Welcome to the Backend Developer's Room. I am posting blogs to deal with
 technical theories and field applications.]
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://jeong-daniel.github.io/"
@@ -39,7 +39,6 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-  - jekyll-paginate
   - jekyll-gist
   - jekyll-coffeescript
   - jekyll-assets
