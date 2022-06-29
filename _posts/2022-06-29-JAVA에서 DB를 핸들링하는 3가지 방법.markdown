@@ -33,15 +33,15 @@ Connection con = DriverManager.getConnection(URL, "user", "password");
 (로컬 환경에서 MySQL의 포트번호가 3306)
 Connection 객체를 생성한다음 getConnection() 메서드를 호출해서 DB 접속을 위한 정보를 입력
 
-'''java
+```java
 Statement stmt = con.createStatement(); 
-'''
+```
 객체 생성
 
-'''java
+```java
 String sql = "select * from student";
 ResultSet result = stmt.executeQuery(sql);  
-'''
+```
 쿼리 생성과 select 문장을 실행하기 위해서 Statement의 메소드 executeQuery()를 사용합니다 이외에도 업데이트를 하고 싶다면 executeUpdate(), create, drop, insert, delete 등을 사용해 테이블의 내용을 조작할 수 있습니다.
 
 그리고 인터페이스 ResultSet로 반환형을 받습니다.
