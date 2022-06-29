@@ -21,7 +21,6 @@ group :jekyll_plugins do
   gem "jekyll-gist"
   gem "jekyll-coffeescript"
   gem "jekyll-assets"
-  gem "jekyll-paginate"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -35,4 +34,3 @@ end
 gem "wdm", :platforms => [:mingw, :x64_mingw, :mswin]
 
 gem "webrick", "~> 1.7"
-gem "jekyll-paginate"
