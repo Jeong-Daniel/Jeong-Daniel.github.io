@@ -5,7 +5,6 @@ date:   2022-06-29 09:38:46 +0900
 categories: JAVA
 tags: java, db, spring, jpa
 ---
-
 제목 그대로 자바에서 DB를 핸들링하는 방법을 정리하고자 합니다. 대표적인 방법 3가지로 자바에 내장된 JDBC, Spring JDBC 마지막으로 JPA가 있으며 각각의 특징과 코드를 설명하고자 합니다.
 
 ## 1. JDBC(Java Database Connectivity)
