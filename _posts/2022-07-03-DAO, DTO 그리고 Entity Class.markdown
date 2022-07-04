@@ -5,7 +5,6 @@ date:   2022-07-03 09:38:46 +0900
 categories: DB
 tags: java, db, spring, jpa, DAO, DTO
 ---
-
 JAVA에서 데이터를 핸들링하기 위한 방법을 먼저 정리할려고 했으나 먼저 객체가 어떻게 DB에 접근하는가를 정리하는게 맞겠다고 생각했습니다. 특히 Spring을 사용하다보면 공식문서를 비롯해서 DAO, DTO, Entity Class등의 개념이 나오게 되는데 해당 개념에 대해 정리를 해두면 좋을 듯 합니다.
 
 ## 1. DAO(Data Access Object)
