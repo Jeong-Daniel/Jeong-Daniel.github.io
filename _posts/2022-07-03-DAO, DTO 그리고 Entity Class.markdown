@@ -18,6 +18,7 @@ DAO는 데이터베이스의 Data에 접근하기 위한 객체입니다. 데이
 * Service와 DB를 연결하는 고리
 * SQL을 사용하여 DB에 접근한 다음 적절한 CRUD API를 제공
 
+*JPA의 Repository package사용을 통한 예시
 ```java
 public interface QuestionRepository extends CrudRepository<Question, Long> {
 }
