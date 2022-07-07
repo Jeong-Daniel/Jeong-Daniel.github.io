@@ -2,7 +2,7 @@
 layout: post
 title:  "데이터와 모델의 편향(bias)과 분산(variance)"
 date:   2021-12-28 00:38:46 +0900
-categories: Machine Learning
+categories: Machine_Learning
 tags: math, ML
 ---
 **[편향과 분산의 트레이드오프 위키 URL](https://en.wikipedia.org/wiki/Bias%E2%80%93variance_tradeoff)** 데이터 과학을 공부하고 기계학습(Machine Learning)을 다루다보면 한번쯤은 편향(bias)과 분산(variance에 대해서 만나게 됩니다. 제가 컴퓨터공학과에서 들었던 인공지능 수업에서도 교수님께서 설명을 하실때 가끔 데이터와 모델의 편향과 분산을 섞어 말하시고 나중에 정정하는 것을 보면서 이참에 정리를 해보고자 합니다.
