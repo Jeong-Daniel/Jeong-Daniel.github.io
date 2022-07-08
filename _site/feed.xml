@@ -1,4 +1,87 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-07T16:19:12+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Backend Developer’s Room</title><subtitle>[&quot;Welcome to the Backend Developer&apos;s Room. I am posting blogs to deal with technical theories and field applications.&quot;]</subtitle><entry><title type="html">DAO, DTO 그리고 Entity Class</title><link href="http://localhost:4000/java/2022/07/03/DAO,-DTO-%EA%B7%B8%EB%A6%AC%EA%B3%A0-Entity-Class.html" rel="alternate" type="text/html" title="DAO, DTO 그리고 Entity Class" /><published>2022-07-03T09:38:46+09:00</published><updated>2022-07-03T09:38:46+09:00</updated><id>http://localhost:4000/java/2022/07/03/DAO,%20DTO%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20Entity%20Class</id><content type="html" xml:base="http://localhost:4000/java/2022/07/03/DAO,-DTO-%EA%B7%B8%EB%A6%AC%EA%B3%A0-Entity-Class.html"><![CDATA[<p>JAVA에서 데이터를 핸들링하기 위한 방법을 먼저 정리할려고 했으나 먼저 객체가 어떻게 DB에 접근하는가를 정리하는게 맞겠다고 생각했습니다. 특히 Spring을 사용하다보면 공식문서를 비롯해서 DAO, DTO, Entity Class등의 개념이 나오게 되는데 해당 개념에 대해 정리를 해두면 좋을 듯 합니다.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.2">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-07-08T17:23:17+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Backend Developer’s Room</title><subtitle>[&quot;Welcome to the Backend Developer&apos;s Room. I am posting blogs to deal with technical theories and field applications.&quot;]</subtitle><entry><title type="html">SQL과 NoSQL의 차이점 정리</title><link href="http://localhost:4000/db/2022/07/08/SQL%EA%B3%BC-NoSQL%EC%9D%98-%EC%B0%A8%EC%9D%B4-%EC%A0%95%EB%A6%AC.html" rel="alternate" type="text/html" title="SQL과 NoSQL의 차이점 정리" /><published>2022-07-08T10:38:46+09:00</published><updated>2022-07-08T10:38:46+09:00</updated><id>http://localhost:4000/db/2022/07/08/SQL%EA%B3%BC%20NoSQL%EC%9D%98%20%EC%B0%A8%EC%9D%B4%20%EC%A0%95%EB%A6%AC</id><content type="html" xml:base="http://localhost:4000/db/2022/07/08/SQL%EA%B3%BC-NoSQL%EC%9D%98-%EC%B0%A8%EC%9D%B4-%EC%A0%95%EB%A6%AC.html"><![CDATA[<p>빅데이터를 다루는게 중요해지면서 동시에 빅데이터는 어디에 담는 것이 좋은지에 대한 관심도 예전부터 늘어나게 되었습니다. 전통적인 DB인 RDBMS부터 이미지와 텍스트 비정형데이터도 자유롭게 담을 수 있는 NoSQL도 떠오르게 되는데 이들을 비교를 하고 시스템을 구축하고 서비스를 기획할때 어떤 DB를 사용하는지 정리해보고자 합니다.</p>
+
+<h2 id="sql-structured-query-language">SQL (Structured Query Language)</h2>
+<p>SQL이라고하면 보통 관계형데이터베이스와 많이 사용하다보니 은연중에 혼동하지만 정확히 SQL은 구조화된 쿼리를 물어보는 언어입니다. 데이터베이스에서 자료를 처리하기 위해 사용하는 구조적 데이터 질의 언어가 정의가 되겠습니다.</p>
+
+<p>이런 직관적인 언어는 어느 데이터베이스에서나 기본적으로 제공하기 대문에 여러곳에서 사용합니다. 단 NoSQL에서는 사용하지 않습니다.</p>
+
+<p><img src="\assets\img\SQL_1.jpg" alt="SQL설명" /></p>
+
+<p>SQL의 특징은 엄격한 스키마와 관계를 가지고 있습니다. 데이터는 테이블에 레코드 형태로 저장하며 각 테이블에는 명확하게 정의된 구조가 있습니다. 구조는 필드의 이름과 데이터 유형(정수형/실수형/문자형), 그리고 고유한 값인가 비워두면 안되는가를 정의합니다.</p>
+
+<p>SQL기반의 관계형데이터베이스의 큰 부분은 관계에 있습니다. 만약 더 많은 필드를 얻고 싶다면 새로운 테이블을 선택하셔야 합니다. 엄격함이 가져다주는 최대의 장점은 바로 데이터의 중복을 피할 수 있습니다.</p>
+
+<p>SQL언어의 특징으로 탐욕적(Greedy)입니다. SQL은 가능한 넓은 범위에 걸쳐 작업하려고 하기에 WHERE절이나 LIMIT 구문을 생략하면 SELECT의 경우 끝도 없이 출력하는 레코드열을 보게 될 것이고 UPDATE와 DELETE의 경우 개발자도 어떤 영향을 가져오는지 모르는 광역적인 반달이 일어날 수도 있습니다. 그렇기 때문에 범위와 제한을 꼼꼼하게 확인을 하며 BEGIN을 먼저 걸어두고 확인을 해야 합니다.</p>
+
+<p>SQL과 RDBMS를 묶어서 요약</p>
+<ul>
+  <li>데이터는 정해진 데이터 스키마에 따라 테이블에 저장</li>
+  <li>데이터는 관계를 통해서 여러 테이블에 분산된다.</li>
+</ul>
+
+<h2 id="nosql-not-only-sql">NoSQL (Not only SQL)</h2>
+<p>NoSQL은 의미를 따지면 SQL만을 사용하지 않는 DBMS(데이터베이스 관리 시스템)입니다. 관계형뿐 아니라 여러 유형의 DB를 뜻하게 됩니다. 데이터를 조직하는 방법에는 리스트, 해시 테이블, 트리, 그래프 등의 다양한 방법이 있고 각각은 장점과 단점이 명확하기 때문에 단순히 NoSQL이라고 말하는 것은 너무 광범위합니다. 단순하게 SQL과 반대되는 개념으로 NoSQL을 사용하지만 엄밀히 말하면 동일 선상의 단어는 아닙니다.</p>
+
+<p>NoSQL의 사용 예시는</p>
+<ul>
+  <li>마케팅 자동화회사의 예측적 마케팅 지원</li>
+  <li>AI 빅데이터의 지원</li>
+  <li>많은 양의 데이터을 읽을 검색 사이트</li>
+  <li>인스타그램, 페이스북, 구글</li>
+  <li>공장의 센서로 정보를 대량으로 수집하여 스마트팩토리/IoT구축</li>
+</ul>
+
+<p><img src="\assets\img\No_SQL.png" alt="NoSQL설명" /></p>
+
+<p>예를 들어 MongoDB와 카우치DB (Apache CouchDB)에서 사용하는 쿼리언어는 서로 다릅니다. 하지만 이 두 쿼리는 NoSQL에 속하게 됩니다. 어찌되었건 SQL이 아니기 때문입니다. 그렇기에 반대로 말해서 NoSQL이 No RDBMS를 의미하는 것은 아닙니다. 여러 예외적으로 SQL을 부분적으로 사용하는 DB가 존재하기 때문입니다. 그렇기 때문에 NoSQL이라고 정해진 명확한 정의는 없습니다.</p>
+
+<p>하지만 공통적으로 가지는 속성은 있습니다.</p>
+<ol>
+  <li>반드시 관계형 모델을 사용하는 것은 아니다.</li>
+  <li>스키마 없이 동작하며 자유롭게 DB레코더에 필드를 추가할 수 있다.</li>
+  <li>21세기 초반에 웹환경에 필요에 의해 개발된것이라 이 시기 이후에 개발된 것이 많다.
++대부분 오픈소스 기반</li>
+</ol>
+
+<p>NoSQL의 등장배경은 데이터의 양이 비대해짐에 따라서 RDBMS의 단점이 부각되었습니다. 이전의 데이터베이스는 트렌젝션을 통해 완전한 데이터 관리가 중요했기 때문에 많은 제약 조건이 있습니다. 그런 상황에서 수많은 기하급수적인 데이터는 데이터를 처리하는 비용이 기하급수적으로 늘어나게되었고 데이터의 일관성을 약간 포기하는대신 다른 방법을 찾게 되었습니다. 그렇게 여러 컴퓨터에 데이터를 분산하여 저장하는 것을 목표로 등장 했고 NoSQL의 등장으로 작고 값싼 장비 여러대로 대량의 데이터를 처리하고 컴퓨팅 부하를 처리하는 것이 가능했습니다.</p>
+
+<p>이 과정에서 트레이드오프는 필연적으로 발생하게되었습니다. 데이터 처리에 대해 느슨하고 비일관성을 주더라도 성능과 비용을 챙길 것인지 아니면 그래도 정합성을 맞춰갈지에 대해서 입니다.</p>
+
+<p><img src="\assets\img\NoSQL_kind.png" alt="NoSQL종류" /></p>
+
+<p>NoSQL데이터 베이스의 종류는 크게 4가지로 구분 할 수 있습니다.
+Key-value / Document / Column-family / Graph</p>
+
+<ol>
+  <li>
+    <p>Key-value
+키 값(Key-value) 저장소는 가장 단순한 형태의 NoSQL으로, 수평적 확장이 용이합니다. 데이터가 키와 값의 쌍으로 저장됩니다. 키는 접근하기 위한 식별자 역할을 하며 데이터는 텍스트/이미지/비디오 어떤 것이든지 가능하게 됩니다.</p>
+  </li>
+  <li>
+    <p>Document
+키-값 모델에서 한층 진화했으며 데이터는 키와 도큐먼트 형태로 저장힙니다. 여기서 키-값과 차이점이라면 Value가 계층적인 형태인 도큐먼트로 저장됩니다. 이 도큐먼트는 객체지향에서의 객체와 유사하며 하나의 단위로 취급되어 저장된다. 다시 말해 하나의 객체를 여러 개의 테이블에 나눠 저장할 필요가 없어진다는 뜻</p>
+  </li>
+  <li>
+    <p>Column-family
+컬럼-패밀리(Column-family) 모델은 집합-지향 모델로 간주됩니다. 이전의 모델들이 키-값 쌍 중 값을 이용해 필드를 결정했다면, 특이하게도 이 모델은 키에서 필드를 결정합니다. 키는 Row와 Column-family, Column-name을 가집니다. 연관된 데이터들은 같은 Column-family 안에 속해 있으며, 각자의 Column-name을 가집니다. 관계형 모델로 설명하자면 어트리뷰트가 계층적인 구조를 가지고 있는 셈</p>
+  </li>
+  <li>
+    <p>Graph
+그래프(Graph) 모델은 상당히 독특한 디자인을 가진 모델로써 집합 지향 모델보다는 관계형 모델에 가깝습니다. 실제 세계의 데이타를 관계와 함께 표현하기 위해 디자인된 모델로써, 데이터는 연속적인 노드, 관계, 특성의 형태로 저장됩니다. 질의 역시 그래프 순회로 이루어 집니다. 다만 클러스트링에는 적합하지 않습니다.</p>
+  </li>
+</ol>
+
+<h2 id="정리--어떤-것을-선택할-것인가">정리 : 어떤 것을 선택할 것인가?</h2>
+<p>어떤 데이터를 다루는가? 어떤 프로그램에서 사용하는가?</p>
+
+<p>‘SQL’은 명확하게 정의된 스키마로 데이터 무결성이 보장되나, 상대적으로 덜 유연하고, 매
+우 복잡하며, 수평적 확장이 어렵다(=성장 한계가 뚜렷하다.)</p>
+
+<p>‘NoSQL’은 유연하며, 복잡한 JOIN이 없어 빠르며, 수평적 확장이 가능하나, 데이터 구조를
+결정하는데 어렵고, 중복이 발생하여 업데이트가 복잡해질 수 있다.</p>
+
+<p>특별한 이슈가 아니라면 가능한, 가능한 SQL을 사용해보고, 이것이 해결 불가능에 다다른
+시점에서 NOSQL로 이동하는 것이 중론!</p>]]></content><author><name></name></author><category term="DB" /><category term="sql," /><category term="db," /><category term="nosql," /><category term="jpa" /><summary type="html"><![CDATA[빅데이터를 다루는게 중요해지면서 동시에 빅데이터는 어디에 담는 것이 좋은지에 대한 관심도 예전부터 늘어나게 되었습니다. 전통적인 DB인 RDBMS부터 이미지와 텍스트 비정형데이터도 자유롭게 담을 수 있는 NoSQL도 떠오르게 되는데 이들을 비교를 하고 시스템을 구축하고 서비스를 기획할때 어떤 DB를 사용하는지 정리해보고자 합니다.]]></summary></entry><entry><title type="html">DAO, DTO 그리고 Entity Class</title><link href="http://localhost:4000/java/2022/07/03/DAO,-DTO-%EA%B7%B8%EB%A6%AC%EA%B3%A0-Entity-Class.html" rel="alternate" type="text/html" title="DAO, DTO 그리고 Entity Class" /><published>2022-07-03T09:38:46+09:00</published><updated>2022-07-03T09:38:46+09:00</updated><id>http://localhost:4000/java/2022/07/03/DAO,%20DTO%20%EA%B7%B8%EB%A6%AC%EA%B3%A0%20Entity%20Class</id><content type="html" xml:base="http://localhost:4000/java/2022/07/03/DAO,-DTO-%EA%B7%B8%EB%A6%AC%EA%B3%A0-Entity-Class.html"><![CDATA[<p>JAVA에서 데이터를 핸들링하기 위한 방법을 먼저 정리할려고 했으나 먼저 객체가 어떻게 DB에 접근하는가를 정리하는게 맞겠다고 생각했습니다. 특히 Spring을 사용하다보면 공식문서를 비롯해서 DAO, DTO, Entity Class등의 개념이 나오게 되는데 해당 개념에 대해 정리를 해두면 좋을 듯 합니다.</p>
 
 <h2 id="1-daodata-access-object">1. DAO(Data Access Object)</h2>
 <p>DAO는 데이터베이스의 Data에 접근하기 위한 객체입니다. 데이터만 담당하는 클래스로 DB의 CRUD 기능을 수행합니다. 우리가 필요한 객체를 바로 DB에 연결하지 않는 이유는 크게 두가지인데 DB 접근 로직과 비즈니스 로직의 분리를 위함이며 나중에 DB가 변경되더라도 DB 접근로직만 변경하면 되기에 비즈니스 로직을 건드리지 않아도 됩니다. 주로 DAO로 뭉떵거리기 보다 DAOInterface/DAOImplement 로 구분지어 명세와 구현 분리하며 개발합니다.</p>

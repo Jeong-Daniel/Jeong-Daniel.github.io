@@ -30,21 +30,17 @@ twitter_username: Jeong_Daniel_
 github_username:  Jeong-Daniel
 
 # Build settings
-theme: minima
-google_analytics:
+google_analytics: ##
 color-scheme: auto
 logo: /assets/img/Person.jpg
 favicon: true
 plugins:
-  - jekyll-remote-theme
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-gist
   - jekyll-coffeescript
   - jekyll-assets
-
-  remote_theme: BDHU/minimalist
 
 # 처리에서 제외합니다.
 # 다음 항목은 기본적으로 처리되지 않습니다.
