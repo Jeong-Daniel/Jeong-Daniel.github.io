@@ -47,8 +47,64 @@ ResultSet result = stmt.executeQuery(sql);
 
 
 ## 2. Spring JDBC
-JDBC가 JDK에 내장되었다면 Spring JDBC는 JDBC의 모든 저수준 처리를 스프링 프레임워크에 위임해서 Connection 연결 객체 생성 및 종료, Statement 준비/실행 및 종료, ResultSet 처리 및 종료, 예외 처리, 트랙잭션 등의 반복되는 처리를 개발자가 직접하지 않고 Database에 대한 작업을 수행할 수 있습니다.
+JDBC가 JDK에 내장되었다면 Spring JDBC는 JDBC의 모든 저수준 처리를 스프링 프레임워크에 위임해서 Connection 연결 객체 생성 및 자동 종료, Statement 준비/실행 및 종료, ResultSet 처리 및 종료, 예외 처리, 트랙잭션 등의 반복되는 처리를 개발자가 직접하지 않고 Database에 대한 작업을 수행할 수 있습니다.
 
+이러한 Spring JDBC를 사용하는 이유는 기존 JDBC의 경우 Connection과 같은 공유 리소스를 제대로 반환하지 않으면 자원이 바닥나지만 Spring JDBC의 경우 자동으로 자원을 관리해주면 보다 간결한 형태의 API를 제공합니다.
 
+### JdbcTemplate 클래스
+Spring JDBC가 제공하는 클래스 중 JdbcTemplate은 JDBC의 모든 기능을 최대한 활용할 수 있는 유연성을 제공하는 클래스입니다. 제공하는 기능은 실행, 조회, 배치의 세가지 작업이 있습니다.
+* 실행 : Insert나 Update같이 DB의 데이터에 변경이 일어나는 쿼리를 수행하는 작업
+* 조회 : Select를 이용해 데이터를 조회하는 작업
+* 배치 : 여러 개의 쿼리를 한 번에 수행해야 하는 작업
 
-## 3. JPA
+JdbcTemplate 클래스 생성
+```java
+JdbcTemplate template = new JdbcTemplate(dateSource);
+```
+* 여기서 dataSource는 Java Bean으로 등록해서 사용하므로 JdbcTemplate이 필요한 DAO 클래스에서 DateSource Bean을 DI 받아서 JdbcTemplate을 생성할 때 인자로 넘겨줌
+
+JdbcTemplate 클래스의 update() 메서드
+```java
+int update (String sql, [SQL 파라미터])
+```
+update() 메서드의 리턴되는 값은 SQL 실행으로 영향을 받은 레코드의 개수를 리턴
+
+JdbcTemplate 클래스의 queryForObject() 메서드
+```java
+<T> T queryForObject (String sql, [SQL 파라미터], RowMapper<T> rm)
+```
+SQL 실행 결과로 돌아온 여러개의 Column을 가진 한 개의 Row를 RowMapper 콜백을 이용해 VO 객체로 매핑
+
+JdbcTemplate 클래스의 query() 메서드
+```java
+<T> List<T> query (String sql, [SQL 파라미터], RowMapper<T> rm)
+```
+SQL 실행 결과로 돌아온 여러 개의 Column을 가진 여러개의 Row를 RowMapper 콜백을 이용해 VO 객체로 매핑
+
+## 3. JPA(Java Persistence API)
+하지만 앞서 설명한 JDBC는 데이터를 조작할때 개발자가 SQL쿼리문을 직접 작성해야한다는 단점이 있습니다. 과거의 자바 표준이 되는 Entity Bean과 ORM(Object Relation Mapping)이 있지만 코드가 지버분하고 API는 인터페이스를 많이 구현해야해 복잡성이 높으며 속도가 느렸습니다.
+
+이를 해결하기 위해서 만들어진 JPA는 현재 자바 진영의 ORM 기술 표준으로, 인터페이스의 모음입니다.
+
+### JPA의 동작 과정
+![JPA의 동작 과정](\assets\img\jpa-basic-structure.png)
+JPA는 애플리케이션과 JDBC 사이에서 동작합니다. 개발자가 JPA를 사용하면, JPA 내부에서 JDBC API를 사용하여 SQL을 호출하여 DB와 통신합니다. 다시말해 개발자가 직접 JDBC API를 쓰는 것이 아닙니다.
+
+#### 저장과정
+![JPA의 저장 과정](\assets\img\jpa-insert-structure.png)
+MemberDAO에서 객체를 저장하고 싶을 때 개발자는 JPA에 Member 객체를 넘긴다.
+그러면 JPA는
+1) Member 엔티티를 분석한다.
+2) INSERT SQL을 생성한다.
+3) JDBC API를 사용하여 SQL을 DB에 요청한다.
+
+#### 조회과정
+![JPA의 조회 과정](\assets\img\jpa-select-structure.png)
+Ex) Member 객체를 조회하고 싶을 때 개발자는 member의 pk 값을 JPA에 넘긴다.
+JPA는
+1) 엔티티의 매핑 정보를 바탕으로 적절한 SELECT SQL을 생성한다.
+2) JDBC API를 사용하여 SQL을 DB에 날린다.
+3) DB로부터 결과를 받아온다.
+4) 결과(ResultSet)를 객체에 모두 매핑한다.
+
+이렇게 쿼리를 JPA가 만들어 주기 때문에 Object와 RDB 간의 패러다임 불일치를 해결할 수 있습니다. JPA를 사용하는 이유는 SQL(데이터) 중심의 개발에서 객체 중심의 개발이 가능해집니다. 데이터중심의 개발은 지루한 CRUD의 반복으로 객체 지향과 관계형 데이터베이스 간의 패러다임 불일치가 존재합니다. 추상화 상속등의 객체지향프로그래밍에서 지향하는 의미를 DB에서는 구현할 수 없습니다.
