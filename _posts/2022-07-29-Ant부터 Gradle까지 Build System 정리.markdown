@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Gradle 그리고 Maven 정리"
+title:  "Ant부터 Gradle까지 Build System 정리"
 date:   2022-07-29 12:38:46 +0900
 categories: JAVA
 tags: java, project, intellij
