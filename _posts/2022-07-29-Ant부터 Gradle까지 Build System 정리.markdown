@@ -25,7 +25,7 @@ Build system에서는 intelliJ와 Maven Gradle 3가지가 있습니다. Maven과
 ![Apache Ant](\assets\img\Apache_Ant.png)
 ## Apache Ant
 아파치 앤트는 Java기반 빌드 도구로 2000년도에 발표했습니다.
-특징은 XML기반으로 버전을 관리를 했으며 자유도가 높았지만 정해진 형식이 없어 스크립트 재사용이 어려웠으며 복잡한 프로젝트일 수록 Build과정이을 이해하기 어려웠습니다. 그리고 XML, Remote Repository를 가져올 수 없었기에 ivy가 도입이 되었습니다.
+특징은 XML기반으로 버전을 관리를 했으며 자유도가 높았지만 정해진 형식이 없어 스크립트 재사용이 어려웠으며 복잡한 프로젝트일 수록 Build과정을 이해하기 어려웠습니다. 그리고 XML, Remote Repository를 가져올 수 없었기에 ivy가 도입이 되었습니다.
 
 ![Maven](\assets\img\maven.jpg)
 ## Apache Maven
